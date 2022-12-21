@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frmMainAdmin1">
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="697dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menú" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Realizar pedido" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reanudar pedido" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Listar pedidos" />
+
+        <Button
+            android:id="@+id/btnMantCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mant. Cliente" />
+
+        <Button
+            android:id="@+id/btnMantUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mant. Usuarios" />
+
+        <Button
+            android:id="@+id/btnReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reportes div" />
+
+        <Button
+            android:id="@+id/btnMantProd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mant. Productos" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
