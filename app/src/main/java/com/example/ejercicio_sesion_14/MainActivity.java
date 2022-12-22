@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             if(rs.next()){
 
                 String tipoU=rs.getString(2);
-                Toast.makeText(getApplicationContext(),"Conexion establecida Versión 1.1 "+rs.getString(2),Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"Conexion establecida Versión 2.0 "+rs.getString(2),Toast.LENGTH_SHORT).show();
                 if(tipoU.compareTo("TU00001")==0) {//cliente
                     Intent x=new Intent(this,frmMainCliente1.class);
                     startActivity(x);
