@@ -4,31 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".frmMainInvitado1">
+    tools:context=".frmManTipoUser">
 
     <LinearLayout
-        android:layout_width="372dp"
-        android:layout_height="692dp"
+        android:layout_width="312dp"
+        android:layout_height="620dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Menú" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="549dp" />
-
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Reportes div." />
+            android:onClick="Insertar"
+            android:text="Insertar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
