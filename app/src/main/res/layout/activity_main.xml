@@ -4,17 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerInParent="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:clipToPadding="false"
+    android:textAlignment="center"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="379dp"
-        android:layout_height="580dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="372dp"
+        android:layout_height="452dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.602">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:textAlignment="center"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
 
         <TextView
             android:id="@+id/textView5"
@@ -27,6 +41,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Ingresa tu usuario"
             android:inputType="textPersonName" />
 
         <TextView
@@ -40,6 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="Ingresa tu contraseña"
             android:inputType="textPassword" />
 
         <Space
@@ -60,4 +76,5 @@
             android:onClick="EnvioPrueba"
             android:text="Insertar" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
