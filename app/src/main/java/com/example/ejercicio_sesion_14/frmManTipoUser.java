@@ -17,11 +17,21 @@ import android.widget.Toast;
 import android.view.View;
 
 public class frmManTipoUser extends AppCompatActivity {
+    private EditText txtUsu, txtPass,txtPassC;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_frm_man_tipo_user);
+        txtUsu=findViewById(R.id.txtUsuarioR);
+        txtPass=findViewById(R.id.txtPasswordR);
+        txtPassC=findViewById(R.id.txtPasswordRC);
+    }
+
+    public void Inicio(View view){
+        Intent x=new Intent(this,MainActivity.class);
+        startActivity(x);
     }
 
 
@@ -38,10 +48,19 @@ public class frmManTipoUser extends AppCompatActivity {
         }
         return cnn;
     }
-    public void Insertar(View view){
+    public void Registrar(View view){
         try {
             Statement st=conexionBD().createStatement();
-            st.executeQuery("insert into tipo_usuarios values('TX01','PRUEBAX1')");
+            if (txtUsu.toString().compareTo("")!=0 && txtPass.toString().compareTo("")!=0
+                    && txtPassC.toString().compareTo("")!=0)
+            {
+                //st.executeUpdate("tipo_usuario");
+                st.executeUpdate("insert into tipo_usuarios values('TU000010','cliente');"+
+               "insert into usuarios values('USU000010','TU000010','"+txtUsu.getText().toString()+"','"+txtPass.getText().toString()+"')");
+            }
+
+            //tipo_usuario
+
 
         }catch (Exception e){
             Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();

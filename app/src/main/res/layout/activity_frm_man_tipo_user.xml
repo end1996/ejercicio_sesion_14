@@ -7,19 +7,53 @@
     tools:context=".frmManTipoUser">
 
     <LinearLayout
-        android:layout_width="312dp"
-        android:layout_height="620dp"
+        android:layout_width="313dp"
+        android:layout_height="388dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549">
+
+        <EditText
+            android:id="@+id/txtUsuarioR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresa tu usuario"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txtPasswordR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresa tu contraseña"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/txtPasswordRC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Confirma tu contraseña"
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Insertar"
-            android:text="Insertar" />
+            android:onClick="Registrar"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Inicio"
+            android:text="Inicio" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

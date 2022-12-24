@@ -30,6 +30,7 @@
             android:id="@+id/btnRealPedido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="Pedir"
             android:text="Realizar pedido" />
 
         <Button

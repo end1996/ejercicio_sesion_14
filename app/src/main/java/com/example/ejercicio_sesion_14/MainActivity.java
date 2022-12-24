@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         return cnn;
     }
 
-    public void EnvioPrueba(View view){
+    public void Registro(View view){
         Intent x=new Intent(this,frmManTipoUser.class);
         startActivity(x);
     }
@@ -67,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
                 }
                 if(tipoU.compareTo("TU00003")==0) {//invitado
                     Intent x=new Intent(this,frmMainInvitado1.class);
+                    startActivity(x);
+                }
+                if(tipoU.compareTo("TU00004")==0) {//comprador
+                    Intent x=new Intent(this,frmMainCliente1.class);
+                    startActivity(x);
+                }
+                if(tipoU.compareTo("TU000010")==0) {//cliente
+                    Intent x=new Intent(this,frmMainCliente1.class);
                     startActivity(x);
                 }
 

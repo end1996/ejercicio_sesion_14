@@ -13,8 +13,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="372dp"
-        android:layout_height="452dp"
+        android:layout_width="380dp"
+        android:layout_height="496dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,11 +70,11 @@
             android:text="Inicio" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="EnvioPrueba"
-            android:text="Insertar" />
+            android:onClick="Registro"
+            android:text="Registrarse" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
