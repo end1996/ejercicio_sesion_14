@@ -16,6 +16,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="62dp" />
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -44,6 +48,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Listar pedidos" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="286dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Logout"
+            android:text="Cerrar Sesión" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

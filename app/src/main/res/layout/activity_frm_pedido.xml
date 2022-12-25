@@ -234,7 +234,15 @@
                 android:backgroundTint="@android:color/holo_green_dark"
                 android:onClick="Sumar"
                 android:text="+" />
+
+
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Logout"
+            android:text="Cerrar Sesión" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

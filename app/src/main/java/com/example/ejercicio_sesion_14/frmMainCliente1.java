@@ -19,5 +19,11 @@ public class frmMainCliente1 extends AppCompatActivity {
         startActivity(x);
     }
 
+    public void Logout(View view){
+        Intent x=new Intent(this,MainActivity.class);
+        startActivity(x);
+    }
+
+
 
 }

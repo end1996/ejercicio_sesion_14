@@ -81,6 +81,10 @@ public class frmPedido extends AppCompatActivity {
         });
     }
 
+    public void Logout(View view){
+        Intent x=new Intent(this,MainActivity.class);
+        startActivity(x);
+    }
 
 
 }
