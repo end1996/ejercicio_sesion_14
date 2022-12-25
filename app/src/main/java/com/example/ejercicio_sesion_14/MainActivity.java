@@ -78,11 +78,13 @@ public class MainActivity extends AppCompatActivity {
                     Intent x=new Intent(this,frmMainCliente1.class);
                     startActivity(x);
                 }
-                if(tipoU.compareTo("TU000010")==0) {//cliente
+                if(tipoU.compareTo("TU00005")==0) {//cliente
                     Intent x=new Intent(this,frmMainCliente1.class);
                     startActivity(x);
                 }
-
+//                else {
+//                    Toast.makeText(getApplicationContext(),"Usuario y/o contraseña incorrecta",Toast.LENGTH_LONG).show();
+//                }
             }
         }catch (Exception e){
             Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();

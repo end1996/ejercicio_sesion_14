@@ -18,21 +18,4 @@ public class frmReanudarPedido extends AppCompatActivity {
         setContentView(R.layout.activity_frm_reanudar_pedido);
     }
 
-//    public class ProductoDAO {
-//        Connection con;
-//        Conexion cn=new Conexion();
-//        PreparedStatement ps;
-//        ResultSet rs;
-//
-//        public List listar(){
-//            List<Producto>productos=new ArrayList();
-//            String sql="select * from productos";
-//            try {
-//                con=cn.getConnection();
-//                ps=con.prepareStatement(sql);
-//                rs=ps.executeQuery();
-//            }
-//        }
-//
-//    }
 }

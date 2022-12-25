@@ -55,8 +55,8 @@ public class frmManTipoUser extends AppCompatActivity {
                     && txtPassC.toString().compareTo("")!=0)
             {
                 //st.executeUpdate("tipo_usuario");
-                st.executeUpdate("insert into tipo_usuarios values('TU000010','cliente');"+
-               "insert into usuarios values('USU000010','TU000010','"+txtUsu.getText().toString()+"','"+txtPass.getText().toString()+"')");
+                st.executeUpdate("insert into tipo_usuarios values('TU00005','cliente');"+
+               "insert into usuarios values('USU00005','TU00005','"+txtUsu.getText().toString()+"','"+txtPass.getText().toString()+"')");
             }
 
             //tipo_usuario
