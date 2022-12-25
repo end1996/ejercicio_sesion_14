@@ -20,13 +20,14 @@ public class MainActivity extends AppCompatActivity {
     private EditText txtUsu, txtPass;
 
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         txtUsu=findViewById(R.id.txtUsuario);
         txtPass=findViewById(R.id.txtPassword);
+
     }
 
     public Connection conexionBD(){
@@ -47,6 +48,10 @@ public class MainActivity extends AppCompatActivity {
         Intent x=new Intent(this,frmManTipoUser.class);
         startActivity(x);
     }
+
+
+
+
 
     public void Consulta(View view){
         try {

@@ -18,4 +18,6 @@ public class frmMainCliente1 extends AppCompatActivity {
         Intent x=new Intent(this,frmPedido.class);
         startActivity(x);
     }
+
+
 }
